@@ -6,6 +6,9 @@ import com.twmacinta.util.MD5;
 
 import fi.eis.md5test.api.MD5HexProvider;
 
+/**
+ * @see http://www.twmacinta.com/myjava/fast_md5.php
+ */
 public class MD5DLLProvider implements MD5HexProvider {
 
     @Override
