@@ -46,4 +46,29 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>my-jdk8</id>
+            <activation>
+                <property>
+                    <name>my-jdk8</name>
+                </property>
+            </activation>
+            <!-- run with -Dmy-jdk8 -->
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.1</version>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <fork>true</fork>
+                            <executable>C:/Program Files/Java/jdk1.8.0/bin/javac</executable>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
